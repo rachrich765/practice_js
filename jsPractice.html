@@ -6,8 +6,19 @@
 
 <script type="text/javascript">
 	function displayInformation () {
-		document.querySelector('h1').innerHTML="Rachel Richardson"
-		document.querySelector('span').innerHTML=document.links
+		document.querySelector('h1').innerHTML="Rachel Richardson";
+		document.getElementById("URL").innerHTML= window.location.href;
+		var num_list = document.getElementsByTagName("li").length;
+		document.getElementById("items").innerHTML=num_list;
+		document.getElementById("time").innerHTML=new Date()
+		document.querySelector("body").style.backgroundColor = "red";
+		document.querySelector("body").style.margin = "100px";
+	}
+	function copyFunction(){
+		var copy = document.getElementById('cheer');
+		copy.innerHTML += "Go Blue<br>";
+		return copy
+	}
 		// Your code goes here. 
 		// Do not change any other code in this file
 		// All of the steps below must be achieved using JavaScript!
@@ -19,7 +30,7 @@
 		4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.  Don't use paragraphs. 
 		*/
 		
-	}
+	
 </script>
 <style>
 p{
